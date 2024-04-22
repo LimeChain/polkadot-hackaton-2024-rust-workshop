@@ -1,0 +1,34 @@
+[package]
+name = "demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "00-basic-syntax"
+path = "./src/00-basic-syntax.rs"
+
+[[bin]]
+name = "11-mutablity"
+path = "./src/11-mutablity.rs"
+
+[[bin]]
+name = "12-copy-clone"
+path = "./src/12-copy-clone.rs"
+
+[[bin]]
+name = "13-ownership-references"
+path = "./src/13-ownership-references.rs"
+
+[[bin]]
+name = "20-addition"
+path = "./src/20-addition.rs"
+
+[[bin]]
+name = "21-structs-enums"
+path = "./src/21-structs-enums.rs"
+
+[[bin]]
+name = "22-traits"
+path = "./src/22-traits.rs"
