@@ -18,12 +18,16 @@ name = "12-copy-clone"
 path = "./src/12-copy-clone.rs"
 
 [[bin]]
+name = "13-dangling"
+path = "./src/13-dangling.rs"
+
+[[bin]]
 name = "13-ownership-references"
 path = "./src/13-ownership-references.rs"
 
 [[bin]]
-name = "20-addition"
-path = "./src/20-addition.rs"
+name = "14-dangling"
+path = "./src/14-dangling.c"
 
 [[bin]]
 name = "21-structs-enums"
@@ -32,3 +36,12 @@ path = "./src/21-structs-enums.rs"
 [[bin]]
 name = "22-traits"
 path = "./src/22-traits.rs"
+
+[[bin]]
+name = "30-checked-addition"
+path = "./src/30-checked-addition.rs"
+
+[[bin]]
+name = "31-parsing-iterators"
+path = "./src/31-parsing-iterators.rs"
+

@@ -1,3 +1,5 @@
+#![allow(dead_code, clippy::never_loop, unused_variables)]
+
 fn print_hello(num: i32) {
     println!("Hello world, my favourite number is {}", num);
 }
@@ -8,10 +10,17 @@ fn get_num() -> i32 {
 
     // return 5;
 
+    // Booleans - true/false
     if true {
         5
     } else {
         6
+    }
+}
+
+fn show_numbers() {
+    for i in 0..16 {
+        println!("i is {}", i);
     }
 }
 
@@ -22,4 +31,17 @@ pub fn main() {
     let a: i32 = get_num();
 
     print_hello(a);
+
+    // Infinite loop
+    loop {
+        let x = 1 + 2;
+
+        // Unless we break
+        break;
+    }
+    while false {
+        // There's also a while loop
+    }
+
+    show_numbers();
 }
