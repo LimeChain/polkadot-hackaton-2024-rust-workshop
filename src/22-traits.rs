@@ -1,4 +1,6 @@
+// {{{
 #![allow(dead_code, clippy::upper_case_acronyms)]
+// }}}
 
 // This stays the same
 #[derive(Debug)]
@@ -63,11 +65,12 @@ where
     shape: S,
 }
 
-// This stays the same
+// And with a bit of syntax overhead ...
 impl<S> ColouredShape<S>
 where
     S: Shape,
 {
+    // ... this can stay the same
     fn describe(self) {
         println!(
             "This shape is a {:?} {} and has an area of {:?}",
@@ -81,18 +84,18 @@ where
 pub fn main() {
     // {{{
     struct Point;
-    impl Shape for Point {
-        fn name(&self) -> &str {
-            "point"
-        }
-
-        fn area(&self) -> f32 {
-            0f32
-        }
-    }
+    // impl Shape for Point {
+    //     fn name(&self) -> &str {
+    //         "point"
+    //     }
+    //
+    //     fn area(&self) -> f32 {
+    //         0f32
+    //     }
+    // }
     // }}}
 
-    let shnep = ColouredShape {
+    let shape = ColouredShape {
         colour: Colour::Grayscale(123),
         shape: Rectangle(5, 8),
         // {{{
@@ -100,7 +103,7 @@ pub fn main() {
         // }}}
     };
 
-    shnep.describe();
+    shape.describe();
 }
 
 // vim: set foldmethod=marker:

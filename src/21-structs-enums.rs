@@ -1,4 +1,6 @@
+// {{{
 #![allow(dead_code, clippy::upper_case_acronyms)]
+// }}}
 
 // NOTE: Simple "C-like" enum, variants have no attached data
 enum DayOfWeek {
@@ -79,12 +81,12 @@ impl ColouredShape {
 // }}}
 
 pub fn main() {
-    let shnep = ColouredShape {
+    let shape = ColouredShape {
         colour: Colour::Grayscale(123),
         shape: Shape::Rectangle(5, 8),
     };
 
-    shnep.describe();
+    shape.describe();
 }
 
 // }}}

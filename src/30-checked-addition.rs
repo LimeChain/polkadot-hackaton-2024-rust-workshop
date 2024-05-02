@@ -1,4 +1,6 @@
+// {{{
 #![allow(unused, clippy::identity_op)]
+// }}}
 
 fn max() -> u8 {
     // 255
@@ -11,10 +13,14 @@ fn main() {
     // let value = max().checked_add(50);
     // let value = max().checked_add(0);
 
+    // {{{
     // match value {
     //     Some(n) => todo!(),
     //     None => todo!(),
     // }
+    // }}}
 
     println!("Value is {:?}", value);
 }
+
+// vim: set foldmethod=marker:

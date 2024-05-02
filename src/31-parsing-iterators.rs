@@ -1,4 +1,6 @@
+// {{{
 #![allow(dead_code, clippy::identity_op, clippy::map_flatten)]
+// }}}
 
 use std::num::ParseIntError;
 
