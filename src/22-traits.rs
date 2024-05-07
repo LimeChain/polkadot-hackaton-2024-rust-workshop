@@ -2,7 +2,7 @@
 #![allow(dead_code, clippy::upper_case_acronyms)]
 // }}}
 
-// This stays the same
+// NOTE: This stays the same
 #[derive(Debug)]
 enum Colour {
     RGB { r: u8, g: u8, b: u8 },
@@ -84,15 +84,15 @@ where
 pub fn main() {
     // {{{
     struct Point;
-    // impl Shape for Point {
-    //     fn name(&self) -> &str {
-    //         "point"
-    //     }
-    //
-    //     fn area(&self) -> f32 {
-    //         0f32
-    //     }
-    // }
+    impl Shape for Point {
+        fn name(&self) -> &str {
+            "point"
+        }
+
+        fn area(&self) -> f32 {
+            0f32
+        }
+    }
     // }}}
 
     let shape = ColouredShape {

@@ -26,10 +26,6 @@ name = "13-ownership-references"
 path = "./src/13-ownership-references.rs"
 
 [[bin]]
-name = "14-dangling"
-path = "./src/14-dangling.c"
-
-[[bin]]
 name = "21-structs-enums"
 path = "./src/21-structs-enums.rs"
 
@@ -42,6 +38,9 @@ name = "30-checked-addition"
 path = "./src/30-checked-addition.rs"
 
 [[bin]]
-name = "31-parsing-iterators"
-path = "./src/31-parsing-iterators.rs"
+name = "31-parsing"
+path = "./src/31-parsing.rs"
 
+[[bin]]
+name = "32-iterators"
+path = "./src/32-iterators.rs"

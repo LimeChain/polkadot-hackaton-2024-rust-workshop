@@ -14,3 +14,5 @@ int main() {
     disturb();
     printf("%d\n", *ptr);
 }
+
+// To show bug compile with `clang -O0 14-dangling.c -o 14-dangling`

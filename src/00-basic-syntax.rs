@@ -16,13 +16,16 @@ fn print_hello(num: i32) {
 fn get_num() -> i32 {
     println!("Let's see now...");
 
-    // {{{
+    // NOTE: explicit return
+    //
+    // return 3;
+
+    // NOTE: implicit return
     if true {
         5
     } else {
         6
     }
-    // }}}
 }
 
 fn show_numbers() {
@@ -52,12 +55,12 @@ pub fn main() {
         println!("Will not print!");
     }
 
-    // Infinite loop (almost same as `while true`, can return values too!)
-    loop {
+    // Infinite loop (almost same as `while true`, but can return values too!)
+    let value = loop {
         println!("1 + 2 = 3");
 
         // Unless we break (with a value, even)
-        break;
+        break 5;
     };
 
     show_numbers();

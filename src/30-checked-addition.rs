@@ -1,22 +1,24 @@
 // {{{
-#![allow(unused, clippy::identity_op)]
+#![allow(dead_code, clippy::identity_op, clippy::map_flatten)]
 // }}}
 
-fn max() -> u8 {
-    // 255
-    u8::MAX
-}
+pub fn main() {
+    fn max() -> u8 {
+        // 255
+        u8::MAX
+    }
 
-fn main() {
     let value = max() + 0;
     // let value = max() + 50;
-    // let value = max().checked_add(50);
-    // let value = max().checked_add(0);
+    // let maybe_value = max().checked_add(50);
+    // let maybe_value = max().checked_add(0);
 
     // {{{
-    // match value {
-    //     Some(n) => todo!(),
-    //     None => todo!(),
+    // NOTE: match (for `Option`)
+    //
+    // match maybe_value {
+    //     Some(n) => { println!("We got a value, here it is: {}", n) },
+    //     None => { println!("We did not get a value, here it isnt:") },
     // }
     // }}}
 
